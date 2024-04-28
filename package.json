@@ -1,0 +1,50 @@
+{
+  "name": "sim-ac",
+  "displayName": "Sim-AC",
+  "description": "Resaltador de sintaxis para ensamblador Sim-AC.",
+  "version": "0.0.0",
+  "publisher": "vscode-sim-ac",
+  "author": "Jose Ruiz",
+  "license": "GNU",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ruiz-jose/Sim-AC-Vscode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ruiz-jose/Sim-AC-Vscode/issues"
+  },
+  "homepage": "https://github.com/ruiz-jose/Sim-AC-Vscode#readme",
+  "keywords": [
+    "vscode",
+    "language",
+    "sim-ac"
+  ],
+  "icon": "assets/icon.png",
+  "engines": {
+    "vscode": "^1.42.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "sim-ac",
+        "extensions": [
+          ".ac"
+        ]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "sim-ac",
+        "scopeName": "source.sim-ac",
+        "path": "./lib/syntaxes/sim-ac.tmGrammar.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "semantic-release": "^18.0.1",
+    "semantic-release-vsce": "^3.5.0"
+  }
+}

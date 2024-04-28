@@ -1,0 +1,83 @@
+{
+  "name": "Sim-AC",
+  "scopeName": "source.sim-ac",
+  "fileTypes": ["ac"],
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#directives"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#instructions"
+    },
+    {
+      "include": "#labels"
+    },
+    {
+      "include": "#numbers"
+    }   
+  ],
+  "repository": {
+    "comments": {
+      "captures": {
+        "1": {
+          "name": "comment.line.single-slash.sim-ac"
+        },
+        "2": {
+          "name": "punctuation.definition.comment.sim-ac"
+        }
+      },
+      "comment": "Comment",
+      "match": "\\s*((\\/).*)$"      
+    },
+    "directives": {
+      "comment": "Directive",
+      "match": "(?i)\\b(section .data|section .text|db)\\b",
+      "name": "entity.name.function.directive.sim-ac"
+    },
+    "keywords": {
+      "comment": "Keyword",
+      "match": "(?i)\\badr\\b",
+      "name": "keyword.other.sim-ac"
+    },
+    "instructions": {
+      "comment": "Instruction",
+      "match": "(?i)\\b(add|sub|lda|sta|jmp|jz|jc|hlt|ldi)\\b",
+      "name": "support.class.sim-ac"
+    },
+    "labels": {
+      "captures": {
+        "1": {
+          "name": "entity.name.tag.sim-ac"
+        }
+      },
+      "comment": "Label",
+      "match": "(\\w+)"
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "include": "#decimal-numbers"
+        },
+        {
+          "include": "#hex-numbers"
+        }
+      ]
+    },
+    "decimal-numbers": {
+      "comment": "Decimal numbers",
+      "match": "\\b([0-9]+)\\b",
+      "name": "constant.numeric.dec.sim-ac"
+    },
+    "hex-numbers": {
+      "comment": "Hex numbers",
+      "match": "\\b([0-9a-fA-F]+)\\b",
+      "name": "constant.numeric.hex.sim-ac"
+    }   
+  }
+}

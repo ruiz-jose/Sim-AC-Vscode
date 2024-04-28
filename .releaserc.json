@@ -1,0 +1,15 @@
+{
+  "branches": ["main"],
+  "verifyConditions": ["semantic-release-vsce", "@semantic-release/github"],
+  "prepare": {
+    "path": "semantic-release-vsce",
+    "packageVsix": "joseruiz66.sim-ac.vsix"
+  },
+  "publish": [
+    "semantic-release-vsce",
+    {
+      "path": "@semantic-release/github",
+      "assets": "joseruiz66.sim-ac.vsix"
+    }
+  ]
+}

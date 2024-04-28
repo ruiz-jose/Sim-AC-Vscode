@@ -1,0 +1,13 @@
+﻿// sumar z = x + y 
+// sim ac
+section .data
+	X	db		3
+	Y	db		2
+	Z	db		0
+
+section .text
+	LDA		X
+	ADD 	Y
+	STA		Z
+	HLT
+
