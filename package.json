@@ -2,7 +2,7 @@
   "name": "sim-ac",
   "displayName": "Sim-AC",
   "description": "Resaltador de sintaxis para ensamblador Sim-AC.",
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.1",
   "publisher": "vscode-sim-ac",
   "author": "Jose Ruiz",
   "license": "GNU",
