@@ -23,17 +23,10 @@
     }   
   ],
   "repository": {
-    "comments": {
-      "captures": {
-        "1": {
-          "name": "comment.line.single-slash.sim-ac"
-        },
-        "2": {
-          "name": "punctuation.definition.comment.sim-ac"
-        }
-      },
-      "comment": "Comment",
-      "match": "\\s*((\\/).*)$"      
+    "comments":  {
+      "begin": ";",
+      "end": "$",
+      "name": "comment.line.semicolon"
     },
     "directives": {
       "comment": "Directive",

@@ -30,6 +30,7 @@
     "languages": [
       {
         "id": "sim-ac",
+        "aliases": ["Sim-AC", "sim-ac"],
         "extensions": [
           ".ac"
         ]
